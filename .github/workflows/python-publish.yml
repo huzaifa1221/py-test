@@ -34,6 +34,6 @@ jobs:
       run: |
         python -m pip install --upgrade twine
         python -m twine upload --repository testpypi dist/*
-        with:
+      with:
         username: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
