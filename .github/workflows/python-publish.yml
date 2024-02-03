@@ -32,7 +32,4 @@ jobs:
       run: python -m build
     - name: Publish package
       run: python -m pip install --upgrade twine
-    - run: python -m twine upload --repository testpypi dist/*
-      env:
-        username: __token__
-        password: pypi-AgENdGVzdC5weXBpLm9yZwIkYWZkMTYyNGItZWMwNS00ZDg0LTkyMGItYTkwZDg0ZDRkMjcyAAIqWzMsIjliM2YxOGM4LWU2MDctNDcxMy04MTk3LTUzNjRiYTA0YmE5NSJdAAAGIL1gVgNZ0Y6mKRIKRLvLd0BQn4Ekjh35QepYu4ICAKet
+    - run: python -m twine upload --repository testpypi dist/* -u __token__ -p pypi-AgENdGVzdC5weXBpLm9yZwIkYWZkMTYyNGItZWMwNS00ZDg0LTkyMGItYTkwZDg0ZDRkMjcyAAIqWzMsIjliM2YxOGM4LWU2MDctNDcxMy04MTk3LTUzNjRiYTA0YmE5NSJdAAAGIL1gVgNZ0Y6mKRIKRLvLd0BQn4Ekjh35QepYu4ICAKet
