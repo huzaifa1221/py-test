@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "llava-huzaifa1221"
+name = "llava-huzaifa12211"
 version = "1.2.3"
 description = "Towards GPT-4 like large language and visual assistant."
 readme = "README.md"
